@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+{% if user.is_authenticated %}
+    <h1>Edit Page</h1>
+    <br>
+<div class=" container-fluid bg1 form-group">
+    <form method="POST" enctype="multipart/form-data">
+
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button class="btn  btn-success "> Update </button>
+
+</div>
+
+{% else %}
+
+<div class="container-fluid ">
+
+
+<h1>Login first , to edit</h1>
+</div>
+{% endif %}
+{% endblock content %}

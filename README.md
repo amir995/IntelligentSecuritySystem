@@ -5,7 +5,7 @@ This application can detect known and unknown person and enties that persons nam
 #I added requirment.txt file with all required packages. All you hve to do first-
     Install Python (version 3.6.8)
     Go to the project directory
-    Copy this following lines then paste on powershelland run it-
+    Copy this following lines then paste on powershell and run it-
     ------------
     pip install Django==3.1.1
     pip install dlib==19.8.1
